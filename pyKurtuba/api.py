@@ -25,7 +25,7 @@ class Kurtuba:
         except requests.exceptions.ConnectTimeout:
             print("Не удалось подключиться к серверу")
 
-    def delete_data(self, token, name):
+    def remove(self, token, name):
 
         try:
 
@@ -35,7 +35,7 @@ class Kurtuba:
         except requests.exceptions.ConnectTimeout:
             print("Не удалось подключиться к серверу")
             
-    def delete_collections(self, token):
+    def delete(self, token):
         
         try:
             request = requests.delete(self.url + token + '/delete').content
@@ -53,7 +53,7 @@ class Kurtuba:
         except requests.exceptions.ConnectTimeout:
             print("Не удалось подключиться к серверу")
 
-    def get_data(self, token, name):
+    def get(self, token, name):
 
         try:
             request = requests.get(self.url + token + '/get/' + name).json()
