@@ -1,5 +1,6 @@
 import requests
 
+
 class Kurtuba:
 
     def __init__(self, url):
