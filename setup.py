@@ -10,7 +10,7 @@ setup(
     author_email='gadzhibala@protonmail.com',
     version=pyKurtuba.__version__,
     packages=find_packages(),
-    long_description=open(join(dirname(__file__), 'README.md')).read(),
+    long_description=open(join(dirname(__file__), 'README.rst')).read(),
     include_package_data=True,
     test_suite='tests',
     install_requires=[

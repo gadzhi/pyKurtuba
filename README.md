@@ -1,5 +1,5 @@
 # pyKurtuba
-[![PyPI version](https://badge.fury.io/py/pyKurtuba.svg)](https://pypi.python.org/pypi/pyKurtuba/0.1.1)
+[![PyPI version](https://badge.fury.io/py/pyKurtuba.svg)](https://pypi.python.org/pypi/pyKurtuba)
 
 Python api-client for [**Kurtuba**](https://github.com/gadzhi/pyKurtuba)
 
