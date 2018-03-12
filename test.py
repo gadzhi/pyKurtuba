@@ -1,6 +1,6 @@
 from pyKurtuba import Kurtuba
-
-test = Kurtuba('http://localhost:3199')
+import requests
+test = Kurtuba('http://localhost:3099', True, '12345', ['google', 'yandex'])
 
 print(test.new_token())
 
