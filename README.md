@@ -1,9 +1,9 @@
 # pyKurtuba
 [![PyPI version](https://badge.fury.io/py/pyKurtuba.svg)](https://pypi.python.org/pypi/pyKurtuba)
 
-Python api-client for [**Kurtuba**](https://github.com/gadzhi/pyKurtuba)
+Python api-client for [**Kurtuba**](https://github.com/hazratgs/kurtuba-storage)
 
-Api клиент для облачного хранилища [**Kurtuba**](https://github.com/gadzhi/pyKurtuba)
+Api клиент для облачного хранилища [**Kurtuba**](https://github.com/hazratgs/kurtuba-storage)
 
 ## Как начать?:
 Установите библиотеку через 
