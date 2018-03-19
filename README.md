@@ -18,7 +18,7 @@ Api клиент для облачного хранилища [**Kurtuba**](http
 
 ## Getting Started
 
-#####Install
+##### Install
 ```python
 pip install pyKurtuba
 ```
@@ -60,6 +60,8 @@ test.new_token()
   }
 }
 ```
+</details>
+
 #### Writing data to storage
 To write data to the storage, you need to transfer the data object:
 
