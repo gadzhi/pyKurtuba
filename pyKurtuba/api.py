@@ -3,15 +3,15 @@ import requests
 
 class Kurtuba:
 
-    def __init__(self, url, domains='', backup=False, password=''):
+    def __init__(self, url, domains=None, back=False, password=None):
         self.url = url
         self.domains = domains
-        self.backup = backup
+        self.back = back
         self.password = password
 
     def new_token(self):
         try:
-            request = requests.post(self.url + '/create', {"domains": self.domains, "backup": self.backup,
+            request = requests.post(self.url + '/create', {"domains": self.domains, "backup": self.back,
                                                            'password': self.password}).json()
             return request
         except requests.exceptions.ConnectTimeout:
@@ -40,14 +40,14 @@ class Kurtuba:
 
     def get_all(self, token):
         try:
-            request = requests.delete(self.url + token + '/getAll').json()
+            request = requests.delete(self.url + token).json()
             return request
         except requests.exceptions.ConnectTimeout:
             print("Не удалось подключиться к серверу")
 
     def get(self, token, name):
         try:
-            request = requests.get(self.url + token + '/get/' + name).json()
+            request = requests.get(self.url + token + '/' + name).json()
             return request
         except requests.exceptions.ConnectTimeout:
             print("Не удалось подключиться к серверу")
